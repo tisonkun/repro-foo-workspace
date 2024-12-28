@@ -1,0 +1,8 @@
+cargo-features = ["open-namespaces"]
+
+[package]
+name = "foo::baz"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]

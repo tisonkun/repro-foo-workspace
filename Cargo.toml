@@ -1,0 +1,13 @@
+cargo-features = ["open-namespaces"]
+
+[workspace]
+members = [
+    "cmd/foo",
+    "crates/bar",
+    "crates/baz",
+]
+resolver = "2"
+
+[workspace.dependencies]
+"foo::bar" = { path = "crates/bar" }
+"foo::baz" = { path = "crates/baz" }

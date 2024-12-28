@@ -1,0 +1,10 @@
+cargo-features = ["open-namespaces"]
+
+[package]
+name = "foo"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+"foo::bar" = { workspace = true }
+"foo::baz" = { workspace = true }
